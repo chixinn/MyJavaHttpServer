@@ -46,7 +46,7 @@ public class SimpeHTTPServer {
     private static class ClientHandler extends Thread{
         private Socket socket;
         //Web资源根路径
-        public static final String ROOT="~/";
+        public static final String ROOT="~/Desktop/webServer/MyJavaHttpServer/src";
         ClientHandler(Socket socket){
             this.socket=socket;
         }
@@ -122,7 +122,7 @@ public class SimpeHTTPServer {
             else{
                 //资源不存在file not found.
                 StringBuffer error=new StringBuffer();
-                error.append("HTTP /1.1 400 file not found /r/n");
+                error.append("HTTP /1.1 400 file not found \r\n");
                 error.append("Content-Type:text/html \r\n");
                 error.append("Content-Length:20 \r\n").append("\r\n");
                 error.append("<h1 >404 Not Found..</h1>");
