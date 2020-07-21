@@ -43,7 +43,7 @@ public class SimpeHTTPServer {
     //交互2：解释该请求已确定所请求的特定文件
     //从服务器的文件系统获得请求的文件
     //创建响应报文Response
-    private static class ClientHandler extends Thread{
+    static class ClientHandler extends Thread{
         private Socket socket;
         //Web资源根路径
         public static final String ROOT="~/Desktop/webServer/MyJavaHttpServer/src";
@@ -57,7 +57,7 @@ public class SimpeHTTPServer {
                 //得到socket的输入输出
                 InputStream is=socket.getInputStream();
                 OutputStream os=socket.getOutputStream();
-                String full_path=read(is,os);
+                String full_path=read(is);
                StringBuffer res= response(full_path);
                if(res==null){
                    System.out.println("Null impossible except Exception");
@@ -79,7 +79,7 @@ public class SimpeHTTPServer {
             }
         }
         //解析资源文件路径
-        private String read(InputStream input,OutputStream output){
+        private String read(InputStream input){
             BufferedReader br= new BufferedReader(new InputStreamReader(input));
             try{
                 String readLine=br.readLine();
@@ -133,7 +133,5 @@ public class SimpeHTTPServer {
 
         }
     }
-
-
-
 }
+
