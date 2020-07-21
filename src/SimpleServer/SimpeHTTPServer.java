@@ -46,7 +46,7 @@ public class SimpeHTTPServer {
     static class ClientHandler extends Thread{
         private Socket socket;
         //Web资源根路径
-        public static final String ROOT="~/Desktop/webServer/MyJavaHttpServer/src";
+        public static final String ROOT="/Users/chixinning/Desktop/webServer/MyJavaHttpServer/src/SimpleServer";
         ClientHandler(Socket socket){
             this.socket=socket;
         }
@@ -58,6 +58,7 @@ public class SimpeHTTPServer {
                 InputStream is=socket.getInputStream();
                 OutputStream os=socket.getOutputStream();
                 String full_path=read(is);
+                System.out.println(full_path);
                StringBuffer res= response(full_path);
                if(res==null){
                    System.out.println("Null impossible except Exception");
@@ -108,10 +109,11 @@ public class SimpeHTTPServer {
                     while((line=br.readLine())!=null){
                         sb.append(line).append("\r\n");
                     }
+
                     StringBuffer result = new StringBuffer();
-                    result.append("HTTP /1.1 200 ok /r/n");
-                    result.append("Content-Type:text/html /r/n");
-                    result.append("Content-Length:").append(file.length()).append("/r/n");
+                    result.append("HTTP/1.0 200 OK");
+                    result.append("Content-Type:text/html");
+                    result.append("Content-Length:").append(file.length());
                     result.append("\r\n:").append(sb.toString());
                     return result;
 
@@ -122,9 +124,9 @@ public class SimpeHTTPServer {
             else{
                 //资源不存在file not found.
                 StringBuffer error=new StringBuffer();
-                error.append("HTTP /1.1 400 file not found \r\n");
-                error.append("Content-Type:text/html \r\n");
-                error.append("Content-Length:20 \r\n").append("\r\n");
+                error.append("HTTP /1.0 400 file not found ");
+                error.append("Content-Type:text/htmln");
+                error.append("Content-Length:20 ");
                 error.append("<h1 >404 Not Found..</h1>");
                 return error;
             }
