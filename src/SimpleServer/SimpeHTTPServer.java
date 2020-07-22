@@ -101,7 +101,7 @@ public class SimpeHTTPServer {
             System.out.println(file.getPath());
             //这个地方的条件判断可以类比那个py。
             if(file.exists()){
-                //资源存在，读资源，资源是文件吗
+                //资源存在，读资源，资源是文件吗？是文件吗为啥要判断？我傻，脑子憨憨
                 try{
                     BufferedReader br=new BufferedReader(new FileReader(file));
                     StringBuffer sb= new StringBuffer();
