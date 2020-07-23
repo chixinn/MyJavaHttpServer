@@ -23,6 +23,7 @@ public class Request {
         }
         System.out.print(request.toString());
         uri=parseUri(request.toString());
+        System.out.println(uri);//uri='/index.html'
     }
     public String parseUri(String requestString){
         int index1,index2;
@@ -30,7 +31,8 @@ public class Request {
         if(index1!=-1){
             index2=requestString.indexOf(" ",index1+1);
             if(index2>index1){
-                return requestString.substring(index1+1,index2);
+                System.out.println(requestString.substring(index1+1,index2));
+                return requestString.substring(index1+1,index2);//uri='/index.html'
             }
         }
         return null;
