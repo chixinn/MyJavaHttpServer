@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f6ffe45b-2975-4323-aceb-6f9350de7819" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1fE1lB0iLe5HrPOM3jXPZFMPTWN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="contextLoads" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="contextLoads" />
+      <module name="NIOPractice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6ffe45b-2975-4323-aceb-6f9350de7819" name="Default Changelist" comment="" />
+      <created>1595768586911</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595768586911</updated>
+      <workItem from="1595768589947" duration="1277000" />
+      <workItem from="1595771464332" duration="94000" />
+      <workItem from="1595771593930" duration="445000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1194" height="197" key="GridCell.Tab.0.bottom" timestamp="1595771354935">
+      <screen x="44" y="23" width="1236" height="777" />
+    </state>
+    <state width="1194" height="197" key="GridCell.Tab.0.bottom/44.23.1236.777@44.23.1236.777" timestamp="1595771354935" />
+    <state width="1194" height="197" key="GridCell.Tab.0.center" timestamp="1595771354934">
+      <screen x="44" y="23" width="1236" height="777" />
+    </state>
+    <state width="1194" height="197" key="GridCell.Tab.0.center/44.23.1236.777@44.23.1236.777" timestamp="1595771354934" />
+    <state width="1194" height="197" key="GridCell.Tab.0.left" timestamp="1595771354934">
+      <screen x="44" y="23" width="1236" height="777" />
+    </state>
+    <state width="1194" height="197" key="GridCell.Tab.0.left/44.23.1236.777@44.23.1236.777" timestamp="1595771354934" />
+    <state width="1194" height="197" key="GridCell.Tab.0.right" timestamp="1595771354935">
+      <screen x="44" y="23" width="1236" height="777" />
+    </state>
+    <state width="1194" height="197" key="GridCell.Tab.0.right/44.23.1236.777@44.23.1236.777" timestamp="1595771354935" />
+    <state x="150" y="23" key="SettingsEditor" timestamp="1595771857596">
+      <screen x="44" y="23" width="1236" height="777" />
+    </state>
+    <state x="150" y="23" key="SettingsEditor/44.23.1236.777@44.23.1236.777" timestamp="1595771857596" />
+    <state x="339" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1595768591914">
+      <screen x="44" y="23" width="1236" height="777" />
+    </state>
+    <state x="339" y="244" key="com.intellij.ide.util.TipDialog/44.23.1236.777@44.23.1236.777" timestamp="1595768591914" />
+    <state x="44" y="34" key="new project wizard" timestamp="1595772009279">
+      <screen x="44" y="23" width="1236" height="777" />
+    </state>
+    <state x="44" y="34" key="new project wizard/44.23.1236.777@44.23.1236.777" timestamp="1595772009279" />
+    <state x="327" y="186" key="run.anything.popup" timestamp="1595771860379">
+      <screen x="44" y="23" width="1236" height="777" />
+    </state>
+    <state x="327" y="186" key="run.anything.popup/44.23.1236.777@44.23.1236.777" timestamp="1595771860379" />
+  </component>
+</project>
