@@ -16,7 +16,7 @@ public class ProxyServer {
                     output.write(buffer,0,lenght);
                     lenght=-1;
                     System.out.println("客户端通过代理服务器给服务器发送消息"+input+host);
-                }
+                }//把请求的剩余部分发送到输出Socket。
                 output.flush();
                 try{
                     Thread.sleep(10);
@@ -46,6 +46,7 @@ public class ProxyServer {
         }
         public static void handleRequest(Socket socket) {
                 try {
+                    /*************/
                     socket.setSoTimeout(1000*60);//设置代理服务器与客户端的连接未活动超时时间
                     String line = "";
                     InputStream clinetInput = socket.getInputStream();
@@ -54,6 +55,9 @@ public class ProxyServer {
                     String type=null;
                     OutputStream os = socket.getOutputStream();
                     BufferedReader br = new BufferedReader(new InputStreamReader(clinetInput));
+                    /*************/
+                    /*3.读取浏览器请求的第一行，该行内容包含了请求的目标URL*/
+                    /*4.分析请求的第一行，得到目标服务器的名字和端口*/
 				    System.out.println("========+++++++++++++=======");
                     int flag=1;
 
@@ -87,16 +91,19 @@ public class ProxyServer {
                     if(tempHost.split(":").length>1) {
                         port = Integer.parseInt(tempHost.split(":")[1]);
                     }
+                    /**
+                     * ***********/
                     host = tempHost.split(":")[0];
 
                     Socket proxySocket = null;//代理间通信的socket
 
                     if(host!=null&&!host.equals("")) {
                         //连接到目标服务器
+                        //5.打开一个通向目标服务器的Socket.
                         proxySocket = new Socket(host,port);
                         proxySocket.setSoTimeout(1000*60);//设置代理服务器与服务器端的连接未活动超时时间
-                        OutputStream proxyOs = proxySocket.getOutputStream();
-                        InputStream proxyIs = proxySocket.getInputStream();
+                        OutputStream proxyOs = proxySocket.getOutputStream();//输出
+                        InputStream proxyIs = proxySocket.getInputStream();//输入
                         assert type != null;
                         if(type.equalsIgnoreCase("connect")) {     //https请求的话，告诉客户端连接已经建立（下面代码建立）
                             os.write("HTTP/1.1 200 Connection Established\r\n\r\n".getBytes());
@@ -124,6 +131,8 @@ public class ProxyServer {
 
         }
         public static void main(String[] args) throws IOException {
+        /*1.等待来自客户的请求
+        * 2.启动新线程以处理客户连接请求*/
             ExecutorService Socketexecutor = Executors.newFixedThreadPool(100);//线程池
             ServerSocket ss = new ServerSocket(11111);//监听代理代理服务器端口
             while(!Thread.currentThread().isInterrupted()){

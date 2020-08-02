@@ -23,7 +23,7 @@ public class HttpProxyServerHandleAdapter extends ChannelInboundHandlerAdapter {
             }
             else{
                 if(fullHttpRequest.uri().indexOf("https")==0){//indexOf是什么意思
-                    targetPort=443;
+                    targetPort=443;//连接目标端口443
                 }
             }
             this.host=temp[0];
