@@ -8,7 +8,7 @@ import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 
 public class HttpServer {
-    private final static int port=9092;
+    private final static int port=8082;
     public static void main(String[]args) throws InterruptedException{
         //BossEventLoop负责接收客户端的连接
         EventLoopGroup bossGroup=new NioEventLoopGroup();
