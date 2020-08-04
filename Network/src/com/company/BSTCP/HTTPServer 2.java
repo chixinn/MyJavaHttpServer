@@ -84,7 +84,7 @@ public class HTTPServer {
     }
 
     public static void main(String[] args) throws IOException {
-        ExecutorService executor = Executors.newFixedThreadPool(50);//线程池
+        ExecutorService executor = Executors.newFixedThreadPool(100);//线程池
         ServerSocket ss = new ServerSocket(8082);
         System.out.println("服务器已经监听:");
         System.out.println(ss.getInetAddress() + ":" + ss.getLocalPort());
@@ -96,7 +96,7 @@ public class HTTPServer {
             new Thread(() -> handleRequest(socket)).start();
         }
         /*Thread Pool 线程池*/
-     /* while(!Thread.currentThread().isInterrupted()){
+      /* while(!Thread.currentThread().isInterrupted()){
            System.out.println("Server阻塞等待中");
            Socket socket=ss.accept();//创建一个连接套接字
            executor.submit(new Thread(()->handleRequest(socket)));//为新的连接创建新的线程

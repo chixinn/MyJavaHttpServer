@@ -15,6 +15,8 @@ public class HttpProxyClientHandle extends ChannelInboundHandlerAdapter {
     public void channelRead(
             ChannelHandlerContext ctx, Object msg) throws Exception {
         FullHttpResponse response = (FullHttpResponse) msg;
+        //修改http响应体返回至客户端
+        response.headers().add("test","from proxy");
         clientChannel.writeAndFlush(msg);
     }
 }

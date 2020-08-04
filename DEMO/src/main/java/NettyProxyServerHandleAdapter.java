@@ -1,49 +1,21 @@
 import io.netty.bootstrap.Bootstrap;
-import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
-import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
 import java.util.HashMap;
 import java.util.Map;
 
-
-public class NettyProxyHttpServer {
-
-    public static void main(String[] s) {
-        System.out.println("<<<<<<<<<<<<<<<<<");
-        NioEventLoopGroup bossGroup = new NioEventLoopGroup(8);
-        NioEventLoopGroup workGroup = new NioEventLoopGroup(8);
-        ServerBootstrap b = new ServerBootstrap();
-        b.group(bossGroup, workGroup).channel(NioServerSocketChannel.class)
-                .childHandler(new ChannelInitializer<Channel>() {
-
-                    @Override
-                    protected void initChannel(Channel ch) throws Exception {
-                        ch.pipeline().addLast(new NettyProxyServerHandler());
-                    }
-                }).option(ChannelOption.SO_BACKLOG, 128)
-                .childOption(ChannelOption.SO_KEEPALIVE, true);
-        try {
-            b.bind(11111).sync();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-}
-
-class NettyProxyServerHandler extends ChannelInboundHandlerAdapter {
+public class NettyProxyServerHandleAdapter extends ChannelInboundHandlerAdapter {
 
     private Map<Channel,Channel> channelMap = new HashMap<>();
-    private Map<Channel, ByteBuf> msgMap = new HashMap<Channel,ByteBuf>();//之所以保留这个map是担心，第一次建立连接时一次性无法获取客户端发来的全部信息
+    private Map<Channel, ByteBuf> msgMap = new HashMap<Channel,ByteBuf>();
     NioEventLoopGroup toServerGroup = new NioEventLoopGroup();
     private Bootstrap bootstrap = new Bootstrap();
 
     @SuppressWarnings("rawtypes")
-    public NettyProxyServerHandler() {
-        //原来在这里我是想用serverbootstrap 下的childGroup去注册我自己直接新建的Channel的，结果发现根本注册不了，需要新生成一个bootstrap
+    public NettyProxyServerHandleAdapter() {
         bootstrap.group(toServerGroup).channel(NioSocketChannel.class)
                 .option(ChannelOption.SO_KEEPALIVE, true)
                 .handler(new ChannelInitializer() {
@@ -77,7 +49,6 @@ class NettyProxyServerHandler extends ChannelInboundHandlerAdapter {
             buffer.writeBytes((ByteBuf) msg);
             buffer.retain();
             msgMap.put(channel, buffer);
-
         }
     }
     @Override
@@ -110,6 +81,9 @@ class NettyProxyServerHandler extends ChannelInboundHandlerAdapter {
                 }else {
                     host = hostTemp.split(":")[0].split("\\r")[0];
                 }
+
+
+
                 final int requestType = type;
                 ChannelFuture future = bootstrap.connect(host, port).sync();
                 if(future.isSuccess()) {         //建立到目标服务器的连接成功，把两者的连接映射放到map，方便后续使用
@@ -131,30 +105,4 @@ class NettyProxyServerHandler extends ChannelInboundHandlerAdapter {
             }
         }
     }
-}
-
-class ToServerHandler extends ChannelInboundHandlerAdapter{
-
-    private Map<Channel,Channel> map = null;
-
-    @Override
-    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-        System.out.println("代理到目标服务器的channel handler出错：");
-        cause.printStackTrace();
-        if(map.containsKey(ctx.channel())) {
-            map.remove(ctx.channel());
-        }
-    }
-
-    public ToServerHandler(Map<Channel, Channel> map) {
-        this.map = map;
-    }
-
-    @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        Channel channel = ctx.channel();
-        Channel toChannel = map.get(channel);
-        toChannel.writeAndFlush(msg);
-    }
-
 }

@@ -4,7 +4,7 @@ import java.net.Socket;
 import java.net.SocketTimeoutException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-/* ProxyServer把请求的剩余部分发送到输出Socket。*/
+
 public class ProxyServer {
     public static void proxyHandler(InputStream input, OutputStream output,String host) {
         try{
@@ -15,13 +15,14 @@ public class ProxyServer {
                 while((lenght=bis.read(buffer))!=-1){
                     output.write(buffer,0,lenght);
                     lenght=-1;
-                }
+                    System.out.println("客户端通过代理服务器给服务器发送消息"+input+host);
+                }//把请求的剩余部分发送到输出Socket。
                 output.flush();
-                /*try{
+                try{
                     Thread.sleep(10);
                 }catch(InterruptedException e){
                     e.printStackTrace();
-                }*/
+                }
             }
         }catch (SocketTimeoutException e){
             try{
@@ -45,6 +46,7 @@ public class ProxyServer {
         }
         public static void handleRequest(Socket socket) {
                 try {
+                    /*************/
                     socket.setSoTimeout(1000*60);//设置代理服务器与客户端的连接未活动超时时间
                     String line = "";
                     InputStream clinetInput = socket.getInputStream();
@@ -53,13 +55,21 @@ public class ProxyServer {
                     String type=null;
                     OutputStream os = socket.getOutputStream();
                     BufferedReader br = new BufferedReader(new InputStreamReader(clinetInput));
+                    /*************/
                     /*3.读取浏览器请求的第一行，该行内容包含了请求的目标URL*/
                     /*4.分析请求的第一行，得到目标服务器的名字和端口*/
+				    System.out.println("========+++++++++++++=======");
                     int flag=1;
+
                     StringBuilder sb =new StringBuilder();
+
                     //读取HTTP请求头，拿到HOST请求头和method.
                     while((line = br.readLine())!=null) {
-                        if(flag==1) {       //获取请求行中请求方法，默认是http
+
+                        System.out.println(line+"*************");//debug用
+
+                        if(flag==1) {       //获取请求行中请求方法，下面会需要这个来判断是http还是https
+						System.out.println("+++++++++"+line);
                             type = line.split(" ")[0];
                             if(type==null)continue;
                         }
@@ -81,6 +91,8 @@ public class ProxyServer {
                     if(tempHost.split(":").length>1) {
                         port = Integer.parseInt(tempHost.split(":")[1]);
                     }
+                    /**
+                     * ***********/
                     host = tempHost.split(":")[0];
 
                     Socket proxySocket = null;//代理间通信的socket
@@ -92,7 +104,6 @@ public class ProxyServer {
                         proxySocket.setSoTimeout(1000*60);//设置代理服务器与服务器端的连接未活动超时时间
                         OutputStream proxyOs = proxySocket.getOutputStream();//输出
                         InputStream proxyIs = proxySocket.getInputStream();//输入
-                        /*https不可直接转发*/
                         assert type != null;
                         if(type.equalsIgnoreCase("connect")) {     //https请求的话，告诉客户端连接已经建立（下面代码建立）
                             os.write("HTTP/1.1 200 Connection Established\r\n\r\n".getBytes());
@@ -106,10 +117,18 @@ public class ProxyServer {
                         Proxyexecutor.submit(new Thread(()->proxyHandler(clinetInput,proxyOs,host)));
                         //转发目标服务器响应至客户端
                         Proxyexecutor.submit(new Thread(()->proxyHandler(proxyIs,os,host)));
+                       /* new proxyHandler(is, proxyOs,host).start();//监听客户端传来消息并转发给服务器
+                        new proxyHandler(proxyIs, os,host).start(); //监听服务器传来消息并转发给客户端*/
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+
+
+
+
+
+
         }
         public static void main(String[] args) throws IOException {
         /*1.等待来自客户的请求

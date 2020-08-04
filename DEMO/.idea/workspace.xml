@@ -24,12 +24,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.NettyProxyServer">
     <configuration name="NettyProxyHttpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="NettyProxyHttpServer" />
       <module name="DEMO" />
@@ -37,8 +37,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NettyProxyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NettyProxyServer" />
+      <module name="DEMO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NettyProxyServer" />
         <item itemvalue="Application.NettyProxyHttpServer" />
       </list>
     </recent_temporary>
@@ -68,6 +76,15 @@
       <workItem from="1596356859464" duration="233000" />
       <workItem from="1596416985341" duration="565000" />
       <workItem from="1596424305310" duration="182000" />
+      <workItem from="1596504076976" duration="1597000" />
+      <workItem from="1596508282148" duration="88000" />
+      <workItem from="1596508410745" duration="317000" />
+      <workItem from="1596508737832" duration="72000" />
+      <workItem from="1596508840657" duration="47000" />
+      <workItem from="1596508961256" duration="527000" />
+      <workItem from="1596509724432" duration="561000" />
+      <workItem from="1596539602033" duration="689000" />
+      <workItem from="1596540336796" duration="5000" />
     </task>
     <servers />
   </component>
@@ -79,30 +96,45 @@
       <screen x="40" y="23" width="1240" height="777" />
     </state>
     <state x="260" y="77" key="#Project_Structure/40.23.1240.777@40.23.1240.777" timestamp="1596356917737" />
-    <state width="1198" height="197" key="GridCell.Tab.0.bottom" timestamp="1596357091418">
-      <screen x="40" y="23" width="1240" height="777" />
+    <state x="126" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596508775986">
+      <screen x="43" y="23" width="1237" height="777" />
+    </state>
+    <state x="126" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/43.23.1237.777@43.23.1237.777" timestamp="1596508775986" />
+    <state x="510" y="307" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1596508743376">
+      <screen x="43" y="23" width="1237" height="777" />
+    </state>
+    <state x="510" y="307" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/43.23.1237.777@43.23.1237.777" timestamp="1596508743376" />
+    <state width="1195" height="197" key="GridCell.Tab.0.bottom" timestamp="1596508887649">
+      <screen x="43" y="23" width="1237" height="777" />
     </state>
     <state width="1198" height="197" key="GridCell.Tab.0.bottom/40.23.1240.777@40.23.1240.777" timestamp="1596357091418" />
-    <state width="1198" height="197" key="GridCell.Tab.0.center" timestamp="1596357091418">
-      <screen x="40" y="23" width="1240" height="777" />
+    <state width="1195" height="197" key="GridCell.Tab.0.bottom/43.23.1237.777@43.23.1237.777" timestamp="1596508887649" />
+    <state width="1195" height="197" key="GridCell.Tab.0.center" timestamp="1596508887648">
+      <screen x="43" y="23" width="1237" height="777" />
     </state>
     <state width="1198" height="197" key="GridCell.Tab.0.center/40.23.1240.777@40.23.1240.777" timestamp="1596357091418" />
-    <state width="1198" height="197" key="GridCell.Tab.0.left" timestamp="1596357091417">
-      <screen x="40" y="23" width="1240" height="777" />
+    <state width="1195" height="197" key="GridCell.Tab.0.center/43.23.1237.777@43.23.1237.777" timestamp="1596508887648" />
+    <state width="1195" height="197" key="GridCell.Tab.0.left" timestamp="1596508887647">
+      <screen x="43" y="23" width="1237" height="777" />
     </state>
     <state width="1198" height="197" key="GridCell.Tab.0.left/40.23.1240.777@40.23.1240.777" timestamp="1596357091417" />
-    <state width="1198" height="197" key="GridCell.Tab.0.right" timestamp="1596357091418">
-      <screen x="40" y="23" width="1240" height="777" />
+    <state width="1195" height="197" key="GridCell.Tab.0.left/43.23.1237.777@43.23.1237.777" timestamp="1596508887647" />
+    <state width="1195" height="197" key="GridCell.Tab.0.right" timestamp="1596508887649">
+      <screen x="43" y="23" width="1237" height="777" />
     </state>
     <state width="1198" height="197" key="GridCell.Tab.0.right/40.23.1240.777@40.23.1240.777" timestamp="1596357091418" />
-    <state x="161" y="50" key="SettingsEditor" timestamp="1596357055976">
-      <screen x="40" y="23" width="1240" height="777" />
+    <state width="1195" height="197" key="GridCell.Tab.0.right/43.23.1237.777@43.23.1237.777" timestamp="1596508887649" />
+    <state x="163" y="23" key="SettingsEditor" timestamp="1596508809809">
+      <screen x="43" y="23" width="1237" height="777" />
     </state>
     <state x="161" y="50" key="SettingsEditor/40.23.1240.777@40.23.1240.777" timestamp="1596357055976" />
-    <state x="336" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1596424316490">
-      <screen x="39" y="23" width="1241" height="777" />
+    <state x="163" y="23" key="SettingsEditor/43.23.1237.777@43.23.1237.777" timestamp="1596508809809" />
+    <state x="338" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1596540336901">
+      <screen x="41" y="23" width="1239" height="777" />
     </state>
     <state x="336" y="244" key="com.intellij.ide.util.TipDialog/39.23.1241.777@39.23.1241.777" timestamp="1596424316490" />
-    <state x="337" y="244" key="com.intellij.ide.util.TipDialog/40.23.1240.777@40.23.1240.777" timestamp="1596356860430" />
+    <state x="337" y="244" key="com.intellij.ide.util.TipDialog/40.23.1240.777@40.23.1240.777" timestamp="1596539605803" />
+    <state x="338" y="244" key="com.intellij.ide.util.TipDialog/41.23.1239.777@41.23.1239.777" timestamp="1596540336901" />
+    <state x="339" y="244" key="com.intellij.ide.util.TipDialog/43.23.1237.777@43.23.1237.777" timestamp="1596509731628" />
   </component>
 </project>

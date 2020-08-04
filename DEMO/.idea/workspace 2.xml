@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f409858-f128-4295-8615-212e127e422b" name="Default Changelist" comment="" />
+    <list default="true" id="67f298fc-b82b-45ac-911e-2e7da92365f3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +14,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1fXB6zD60Nkgr34roPV5wnNO4Ld" />
+  <component name="ProjectId" id="1fXG7Qr405meQcNecP7T3TAbLN0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,22 +24,22 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunManager">
-    <configuration name="HttpProxyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HttpProxyServer" />
-      <module name="NettyProxyTestRun" />
+    <configuration name="NettyProxyHttpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NettyProxyHttpServer" />
+      <module name="DEMO" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HttpProxyServer" />
+        <item itemvalue="Application.NettyProxyHttpServer" />
       </list>
     </recent_temporary>
   </component>
@@ -60,15 +60,14 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5f409858-f128-4295-8615-212e127e422b" name="Default Changelist" comment="" />
-      <created>1596354386454</created>
+      <changelist id="67f298fc-b82b-45ac-911e-2e7da92365f3" name="Default Changelist" comment="" />
+      <created>1596356855508</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1596354386454</updated>
-      <workItem from="1596354389909" duration="1439000" />
-      <workItem from="1596355919690" duration="664000" />
-      <workItem from="1596356891360" duration="200000" />
-      <workItem from="1596539985457" duration="270000" />
+      <updated>1596356855508</updated>
+      <workItem from="1596356859464" duration="233000" />
+      <workItem from="1596416985341" duration="565000" />
+      <workItem from="1596424305310" duration="182000" />
     </task>
     <servers />
   </component>
@@ -76,33 +75,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1198" height="197" key="GridCell.Tab.0.bottom" timestamp="1596356585535">
+    <state x="260" y="77" key="#Project_Structure" timestamp="1596356917737">
       <screen x="40" y="23" width="1240" height="777" />
     </state>
-    <state width="1198" height="197" key="GridCell.Tab.0.bottom/40.23.1240.777@40.23.1240.777" timestamp="1596356585535" />
-    <state width="1198" height="197" key="GridCell.Tab.0.center" timestamp="1596356585534">
+    <state x="260" y="77" key="#Project_Structure/40.23.1240.777@40.23.1240.777" timestamp="1596356917737" />
+    <state width="1198" height="197" key="GridCell.Tab.0.bottom" timestamp="1596357091418">
       <screen x="40" y="23" width="1240" height="777" />
     </state>
-    <state width="1198" height="197" key="GridCell.Tab.0.center/40.23.1240.777@40.23.1240.777" timestamp="1596356585534" />
-    <state width="1198" height="197" key="GridCell.Tab.0.left" timestamp="1596356585533">
+    <state width="1198" height="197" key="GridCell.Tab.0.bottom/40.23.1240.777@40.23.1240.777" timestamp="1596357091418" />
+    <state width="1198" height="197" key="GridCell.Tab.0.center" timestamp="1596357091418">
       <screen x="40" y="23" width="1240" height="777" />
     </state>
-    <state width="1198" height="197" key="GridCell.Tab.0.left/40.23.1240.777@40.23.1240.777" timestamp="1596356585533" />
-    <state width="1198" height="197" key="GridCell.Tab.0.right" timestamp="1596356585535">
+    <state width="1198" height="197" key="GridCell.Tab.0.center/40.23.1240.777@40.23.1240.777" timestamp="1596357091418" />
+    <state width="1198" height="197" key="GridCell.Tab.0.left" timestamp="1596357091417">
       <screen x="40" y="23" width="1240" height="777" />
     </state>
-    <state width="1198" height="197" key="GridCell.Tab.0.right/40.23.1240.777@40.23.1240.777" timestamp="1596356585535" />
-    <state x="198" y="73" key="Maven.ArtifactSearchDialog" timestamp="1596354498787">
+    <state width="1198" height="197" key="GridCell.Tab.0.left/40.23.1240.777@40.23.1240.777" timestamp="1596357091417" />
+    <state width="1198" height="197" key="GridCell.Tab.0.right" timestamp="1596357091418">
       <screen x="40" y="23" width="1240" height="777" />
     </state>
-    <state x="198" y="73" key="Maven.ArtifactSearchDialog/40.23.1240.777@40.23.1240.777" timestamp="1596354498787" />
-    <state x="148" y="23" key="SettingsEditor" timestamp="1596356102752">
+    <state width="1198" height="197" key="GridCell.Tab.0.right/40.23.1240.777@40.23.1240.777" timestamp="1596357091418" />
+    <state x="161" y="50" key="SettingsEditor" timestamp="1596357055976">
       <screen x="40" y="23" width="1240" height="777" />
     </state>
-    <state x="148" y="23" key="SettingsEditor/40.23.1240.777@40.23.1240.777" timestamp="1596356102752" />
-    <state x="337" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1596354391682">
-      <screen x="40" y="23" width="1240" height="777" />
+    <state x="161" y="50" key="SettingsEditor/40.23.1240.777@40.23.1240.777" timestamp="1596357055976" />
+    <state x="336" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1596424316490">
+      <screen x="39" y="23" width="1241" height="777" />
     </state>
-    <state x="337" y="244" key="com.intellij.ide.util.TipDialog/40.23.1240.777@40.23.1240.777" timestamp="1596354391682" />
+    <state x="336" y="244" key="com.intellij.ide.util.TipDialog/39.23.1241.777@39.23.1241.777" timestamp="1596424316490" />
+    <state x="337" y="244" key="com.intellij.ide.util.TipDialog/40.23.1240.777@40.23.1240.777" timestamp="1596356860430" />
   </component>
 </project>
