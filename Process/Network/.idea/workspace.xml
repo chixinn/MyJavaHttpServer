@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c36d7414-4d09-49e4-b82f-eb03bc198a1e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1f5lYbBfcmAa7eXVYiCnWgftJJN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="HTTPServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.BSTCP.HTTPServer" />
+      <module name="Network" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.BSTCP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HTTPServer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c36d7414-4d09-49e4-b82f-eb03bc198a1e" name="Default Changelist" comment="" />
+      <created>1595515882625</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595515882625</updated>
+      <workItem from="1595515885234" duration="1399000" />
+      <workItem from="1595551555647" duration="3710000" />
+      <workItem from="1595558931074" duration="1106000" />
+      <workItem from="1595642081875" duration="247000" />
+      <workItem from="1595644188244" duration="789000" />
+      <workItem from="1595721369602" duration="867000" />
+      <workItem from="1595722563397" duration="1725000" />
+      <workItem from="1595735548663" duration="2614000" />
+      <workItem from="1595738725276" duration="718000" />
+      <workItem from="1595751460568" duration="88000" />
+      <workItem from="1596076482681" duration="598000" />
+      <workItem from="1596417827940" duration="1862000" />
+      <workItem from="1596432032744" duration="2375000" />
+      <workItem from="1596434693424" duration="47000" />
+      <workItem from="1596434772583" duration="1601000" />
+      <workItem from="1596437320830" duration="71000" />
+      <workItem from="1596464154862" duration="8000" />
+      <workItem from="1596592773058" duration="1206000" />
+      <workItem from="1596612049225" duration="473000" />
+      <workItem from="1596675389153" duration="54000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1194" height="175" key="GridCell.Tab.0.bottom" timestamp="1596612547628">
+      <screen x="44" y="23" width="1236" height="777" />
+    </state>
+    <state width="1198" height="306" key="GridCell.Tab.0.bottom/39.23.1241.777@39.23.1241.777" timestamp="1596593913088" />
+    <state width="1198" height="306" key="GridCell.Tab.0.bottom/40.23.1240.777@40.23.1240.777" timestamp="1596593982241" />
+    <state width="1195" height="197" key="GridCell.Tab.0.bottom/43.23.1237.777@43.23.1237.777" timestamp="1595738435578" />
+    <state width="1194" height="175" key="GridCell.Tab.0.bottom/44.23.1236.777@44.23.1236.777" timestamp="1596612547628" />
+    <state width="575" height="197" key="GridCell.Tab.0.bottom/46.23.1234.777@46.23.1234.777" timestamp="1595722089180" />
+    <state width="1194" height="175" key="GridCell.Tab.0.center" timestamp="1596612547627">
+      <screen x="44" y="23" width="1236" height="777" />
+    </state>
+    <state width="1198" height="306" key="GridCell.Tab.0.center/39.23.1241.777@39.23.1241.777" timestamp="1596593913087" />
+    <state width="1198" height="306" key="GridCell.Tab.0.center/40.23.1240.777@40.23.1240.777" timestamp="1596593982241" />
+    <state width="1195" height="197" key="GridCell.Tab.0.center/43.23.1237.777@43.23.1237.777" timestamp="1595738435577" />
+    <state width="1194" height="175" key="GridCell.Tab.0.center/44.23.1236.777@44.23.1236.777" timestamp="1596612547627" />
+    <state width="575" height="197" key="GridCell.Tab.0.center/46.23.1234.777@46.23.1234.777" timestamp="1595722089178" />
+    <state width="1194" height="175" key="GridCell.Tab.0.left" timestamp="1596612547627">
+      <screen x="44" y="23" width="1236" height="777" />
+    </state>
+    <state width="1198" height="306" key="GridCell.Tab.0.left/39.23.1241.777@39.23.1241.777" timestamp="1596593913087" />
+    <state width="1198" height="306" key="GridCell.Tab.0.left/40.23.1240.777@40.23.1240.777" timestamp="1596593982240" />
+    <state width="1195" height="197" key="GridCell.Tab.0.left/43.23.1237.777@43.23.1237.777" timestamp="1595738435577" />
+    <state width="1194" height="175" key="GridCell.Tab.0.left/44.23.1236.777@44.23.1236.777" timestamp="1596612547627" />
+    <state width="575" height="197" key="GridCell.Tab.0.left/46.23.1234.777@46.23.1234.777" timestamp="1595722089178" />
+    <state width="1194" height="175" key="GridCell.Tab.0.right" timestamp="1596612547627">
+      <screen x="44" y="23" width="1236" height="777" />
+    </state>
+    <state width="1198" height="306" key="GridCell.Tab.0.right/39.23.1241.777@39.23.1241.777" timestamp="1596593913087" />
+    <state width="1198" height="306" key="GridCell.Tab.0.right/40.23.1240.777@40.23.1240.777" timestamp="1596593982241" />
+    <state width="1195" height="197" key="GridCell.Tab.0.right/43.23.1237.777@43.23.1237.777" timestamp="1595738435578" />
+    <state width="1194" height="175" key="GridCell.Tab.0.right/44.23.1236.777@44.23.1236.777" timestamp="1596612547627" />
+    <state width="575" height="197" key="GridCell.Tab.0.right/46.23.1234.777@46.23.1234.777" timestamp="1595722089179" />
+    <state x="47" y="40" key="SettingsEditor" timestamp="1595721384281">
+      <screen x="46" y="23" width="1234" height="777" />
+    </state>
+    <state x="47" y="40" key="SettingsEditor/46.23.1234.777@46.23.1234.777" timestamp="1595721384281" />
+    <state x="315" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1596675389639">
+      <screen x="44" y="23" width="1236" height="777" />
+    </state>
+    <state x="311" y="246" key="com.intellij.ide.util.TipDialog/39.23.1241.777@39.23.1241.777" timestamp="1596434775001" />
+    <state x="312" y="246" key="com.intellij.ide.util.TipDialog/40.23.1240.777@40.23.1240.777" timestamp="1596417828997" />
+    <state x="314" y="246" key="com.intellij.ide.util.TipDialog/43.23.1237.777@43.23.1237.777" timestamp="1596464156736" />
+    <state x="315" y="246" key="com.intellij.ide.util.TipDialog/44.23.1236.777@44.23.1236.777" timestamp="1596675389639" />
+    <state x="317" y="246" key="com.intellij.ide.util.TipDialog/46.23.1234.777@46.23.1234.777" timestamp="1595721371113" />
+    <state x="663" y="23" width="617" height="777" maximized="true" key="dock-window-1" timestamp="1595751484011">
+      <screen x="40" y="23" width="1240" height="777" />
+    </state>
+    <state x="663" y="23" width="617" height="777" maximized="true" key="dock-window-1/40.23.1240.777@40.23.1240.777" timestamp="1595751484011" />
+    <state x="665" y="23" width="577" height="757" key="dock-window-1/43.23.1237.777@43.23.1237.777" timestamp="1595737926940" />
+    <state x="666" y="23" width="576" height="757" key="dock-window-1/46.23.1234.777@46.23.1234.777" timestamp="1595738760620" />
+    <state x="591" y="175" width="689" height="472" key="find.popup" timestamp="1595516388381">
+      <screen x="46" y="23" width="1234" height="777" />
+    </state>
+    <state x="591" y="175" width="689" height="472" key="find.popup/46.23.1234.777@46.23.1234.777" timestamp="1595516388381" />
+  </component>
+</project>
